@@ -13,10 +13,29 @@
           $( "#datepicker" ).datepicker();
         } );
         </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+        $("#btn1").click(function(){
+        $("#formular").text("Potvrzení rezervace naleznete na vašem emailu.");
+  });
 </head>
 <body>
     <h1>REZERVACE</h1>
     <p>Pokud si chcete rezervovat fleka, zavolejte buď na číslo 286 330 812, nebo vyplňte následující formulář:</p>
-    <p>Date: <input type="text" id="datepicker"></p>
+    <form action="/action_page.php">
+        <p id="formular">Date: <input type="text" id="datepicker">
+        First name:<br>
+        <input type="text" name="firstname">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname">
+        <br>
+        Email: <br>
+        <input type= "text" name="email">
+        <br><br>
+        <input type="submit" value="Submit"></p>
+      </form> 
+      <p><button id="btn1">Zarezervovat</button></p>
 </body>
 </html>
