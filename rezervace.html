@@ -17,7 +17,7 @@
         <script>
         $(document).ready(function(){
         $("#btn1").click(function(){
-        $("#formular").text("Potvrzení rezervace naleznete na vašem emailu.");
+        $("#rezervace").html(<b>Potvrzení rezervace naleznete na vašem emailu.</b>);
         });
         </script>
 
@@ -26,7 +26,9 @@
     <h1>REZERVACE</h1>
     <p>Pokud si chcete rezervovat fleka, zavolejte buď na číslo 286 330 812, nebo vyplňte následující formulář:</p>
     <form action="/action_page.php">
-        <p id="formular">Date: <input type="text" id="datepicker">
+        <p id="formular">
+        <p>Date: 
+        <input type="text" id="datepicker"> </p>
         First name:<br>
         <input type="text" name="firstname">
         <br>
@@ -36,8 +38,7 @@
         Email: <br>
         <input type= "text" name="email">
         <br><br>
-        <input type="submit" value="Submit"></p>
       </form> 
-      <p><button id="btn1">Zarezervovat</button></p>
+      <button id="rezervace">Zarezervovat</button>
 </body>
 </html>
