@@ -41,7 +41,7 @@
 }
 .item{
   flex-basis:30%;
-
+}
 body {
   background-color: lightblue;
   font-family: Arial, Helvetica, sans-serif;
@@ -91,9 +91,10 @@ body {
 
 }
 
-.container {
+.containerG {
   display: flex; /* or inline-flex */
+  justify-content: space-around;
 }
-.item {
+.itemG {
   width: 50%;
 }
