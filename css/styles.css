@@ -1,5 +1,8 @@
 * {box-sizing: border-box}
 
+h1 {
+  font-family: 'Aladin';font-size: 22px;
+}
 
 .navbar {
   width: 100%;
